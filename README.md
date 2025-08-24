@@ -17,8 +17,8 @@ It documents places where people once lived, and what those spaces were replaced
 
 This isn’t meant to be *my* site — it’s meant to be a commons. If you’ve got better ideas, corrections, or contributions:
 
-- Submit a [Pull Request](https://github.com/YOUR-USERNAME/YOUR-REPO/pulls) with improvements.  
-- Open an [Issue](https://github.com/YOUR-USERNAME/YOUR-REPO/issues) to suggest changes or new features.  
+- Submit a [Pull Request](https://github.com/nibblesnbits/didyouusedtolivehere.org/pulls) with improvements.  
+- Open an [Issue](https://github.com/nibblesnbits/didyouusedtolivehere.org/issues) to suggest changes or new features.  
 - Or just email **info@didyouusedtolivehere.org** with stories, images, or locations.
 
 Check out [CONTRIBUTING.md](CONTRIBUTING.md) for details.
