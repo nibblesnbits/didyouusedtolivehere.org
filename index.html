@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Did You Used to Live Here?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Meta -->
+    <meta
+      name="description"
+      content="A living record of displacement. Before-and-after evidence of communities erased by 'luxury' development."
+    />
+    <meta name="theme-color" content="#0b0b0b" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Did You Used to Live Here?" />
+    <meta
+      property="og:description"
+      content="One question. A thousand erased homes."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://didyouusedtolivehere.org/" />
+    <meta
+      property="og:image"
+      content="https://didyouusedtolivehere.org/og-card.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Minimal fonts & styles (no external deps) -->
+    <style>
+      :root {
+        --bg: #0b0b0b;
+        --fg: #f4f4f5;
+        --muted: #a1a1aa;
+        --accent: #fb923c;
+        --line: #262626;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial,
+          sans-serif;
+      }
+      a {
+        color: var(--fg);
+      }
+      .wrap {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+      header {
+        padding: 48px 0 24px;
+        text-align: center;
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(28px, 5vw, 54px);
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+      }
+      .tagline {
+        color: var(--muted);
+        font-size: clamp(14px, 2.2vw, 18px);
+      }
+      .hero {
+        margin: 28px 0 8px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        overflow: hidden;
+        background: #111;
+      }
+      .split {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1px;
+        background: var(--line);
+      }
+      .panel {
+        background: #0f0f0f;
+      }
+      .panel > .label {
+        padding: 8px 12px;
+        font-size: 13px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--muted);
+        border-bottom: 1px solid var(--line);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .panel .content {
+        aspect-ratio: 16/9;
+        width: 100%;
+      }
+      iframe,
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        object-fit: cover;
+      }
+
+      @media (min-width: 900px) {
+        .split {
+          grid-template-columns: 1fr 1fr;
+        }
+        .panel .content {
+          aspect-ratio: auto;
+          height: 420px;
+        }
+      }
+
+      .lede {
+        margin: 28px 0 10px;
+        font-size: clamp(18px, 2.6vw, 22px);
+      }
+      .blockquote {
+        margin: 20px 0;
+        padding: 16px 18px;
+        border-left: 3px solid var(--accent);
+        background: #111;
+        color: #fafafa;
+        border-radius: 6px 12px 12px 6px;
+      }
+      .cta {
+        margin: 28px 0;
+        padding: 16px;
+        border: 1px dashed var(--line);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: #0f0f0f;
+      }
+      .cta a.btn {
+        align-self: flex-start;
+        text-decoration: none;
+        background: var(--accent);
+        color: #1a1a1a;
+        padding: 10px 14px;
+        border-radius: 10px;
+        font-weight: 700;
+      }
+      footer {
+        margin: 40px 0 12px;
+        color: var(--muted);
+        font-size: 14px;
+        text-align: center;
+      }
+      .sep {
+        opacity: 0.25;
+        margin: 0 6px;
+      }
+    </style>
+
+    <!-- Basic structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Did You Used to Live Here?",
+        "url": "https://didyouusedtolivehere.org/",
+        "description": "A living record of displacement with before/after evidence.",
+        "publisher": { "@type": "Organization", "name": "DidYouUsedToLiveHere" }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>Did You Used to Live Here?</h1>
+        <div class="tagline">One question. A thousand erased homes.</div>
+      </header>
+
+      <!-- Side-by-side BEFORE / AFTER -->
+      <section class="hero" aria-label="Before and after evidence">
+        <div class="split">
+          <div class="panel">
+            <div class="label">Before (Jan 2022) · Blue tarps in the trees</div>
+            <div class="content">
+              <!-- Paste your Street View EMBED URL below -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!4v1756031934354!6m8!1m7!1saig5UOejp24J7Z_FvCPyVQ!2m2!1d30.25038384101366!2d-81.75755082173437!3f88.46835919838834!4f4.931352981783263!5f0.7820865974627469"
+                title="Street View — after"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="label">
+              After (Apr 2025) · Apartments under construction
+            </div>
+            <div class="content">
+              <!-- Paste your Street View EMBED URL below -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!4v1756031892972!6m8!1m7!1stT4NSNUMkmcaM_cNQl5SlQ!2m2!1d30.25038807192879!2d-81.75758604394711!3f88.46835919838834!4f4.931352981783263!5f0.7820865974627469"
+                title="Street View — before"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Short lede -->
+      <p class="lede">
+        In 2022, people lived here—under blue tarps, in a grove of trees, three
+        blocks from my house in Jacksonville, Florida. In 2025, those trees are
+        landscaping. In their place: “luxury apartments.” None of the original
+        residents can return. This isn’t revitalization. It’s erasure.
+      </p>
+
+      <!-- Pull-quote -->
+      <div class="blockquote">
+        <strong>“Did you used to live here?”</strong>
+        Ask it on opening day. Ask it of every person walking in. Watch the
+        silence answer. The people who could say yes were already told no.
+      </div>
+
+      <!-- Story / spoken word (you can swap in audio/video later) -->
+      <section aria-label="Story">
+        <h2 style="margin: 24px 0 8px; letter-spacing: -0.01em">
+          Three Blocks from My House
+        </h2>
+        <p>
+          I didn’t think I was witnessing a parable. I was just walking. A
+          little clump of trees, wedged between a service road and a shrug from
+          the city. Tent city. Blue tarps like bruises in the branches…
+        </p>
+        <p>
+          (Paste your full spoken-word text here, or embed an audio/video
+          recording when you have it.)
+        </p>
+      </section>
+
+      <!-- Call to action -->
+      <section class="cta" aria-label="Contribute">
+        <div><strong>Have a site like this in your city?</strong></div>
+        <div>
+          Send the coordinates, screenshots, or the story. We’ll add it to the
+          record.
+        </div>
+        <a
+          class="btn"
+          href="mailto:info@didyouusedtolivehere.org?subject=Submission%20for%20DidYouUsedToLiveHere"
+          >Email: info@didyouusedtolivehere.org</a
+        >
+      </section>
+
+      <footer>
+        <span>didyouusedtolivehere.org</span>
+        <span class="sep">•</span>
+        <span>A living record of displacement</span>
+      </footer>
+    </div>
+  </body>
+</html>
